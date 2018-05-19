@@ -1,0 +1,36 @@
+{
+  "name": "@northern/util",
+  "version": "0.0.1",
+  "description": "JavaScript utilities.",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/northern/util.js.git"
+  },
+  "keywords": [
+    "library"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/northern/util.js/issues"
+  },
+  "homepage": "https://github.com/northern/util.js#readme",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prepublish": "babel src --out-dir lib --ignore *.test.js"
+  },
+  "babel": {
+    "presets": ["es2015"]
+  },
+  "jest": {
+    "modulePathIgnorePatterns": ["node_mdules", "lib"]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "jest": "^22.4.3"
+  }
+}
